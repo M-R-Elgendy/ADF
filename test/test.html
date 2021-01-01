@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>
+        test
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="depen/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="depen/vendor/DataTables/datatables.min.css" />
+    <link rel="stylesheet" href="depen/vendor/font-awesome/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="depen/vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="depen/vendor/DataTables/datatables.min.js"></script>
+
+</head>
+
+<body>
+    <h2 class="alert alert-danger">test</h2>
+    <i class="fa fa-file-text fa-5x"></i>
+
+    <div class="col-6">
+        <table class="table table-bordered table-Dark table-responsive" id="myTable">
+            <thead>
+                <tr>
+                    <th scope="col">Column 1</th>
+                    <th scope="col">Column 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-success">
+                    <td scope="row">Row 1 Data1</td>
+                    <td scope="row">Row 1 Data 2</td>
+                </tr>
+                <tr class="table-danger">
+                    <td scope="row">Row 2 Data 1</td>
+                    <td scope="row">Row 2 Data 2</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <script>
+        $(".alert").text("JQUERY TEST!");
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+    </script>
+
+
+</body>
+
+</html>
