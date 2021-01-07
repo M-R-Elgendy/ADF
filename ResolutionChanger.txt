@@ -1,0 +1,22 @@
+
+Public Class Form1
+
+    Private OldWidth As UInteger
+    Private OldHeight As UInteger
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+
+        OldHeight = CUInt(Screen.PrimaryScreen.Bounds.Height)
+        OldWidth = CUInt(Screen.PrimaryScreen.Bounds.Width)
+
+        ResolutionChanger.ResolutionChanger.ElgendyResolutionChangeger("800000", "600")
+
+    End Sub
+
+    Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+
+        ResolutionChanger.ResolutionChanger.ElgendyResolutionChangeger(OldWidth, OldHeight)
+    End Sub
+End Class
+
