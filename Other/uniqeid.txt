@@ -1,0 +1,6 @@
+5ff9bbb15802b
+5ff9bbc34bbec
+
+<?php
+printf(uniqid('ADFPART_'));
+?>
